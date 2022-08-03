@@ -2,6 +2,11 @@
 
 # Определение персонажей игры.
 define e = Character('Эйлин', color="#c8ffc8")
+define ritsu = Character('Рицу', color="#a77327")
+define mio = Character('Мио', color="#343436")
+define tsumugi = Character('Цумуги')
+define yui = Character('Юи')
+define adzusa = Character('Адзуса')
 
 # Вместо использования оператора image можете просто
 # складывать все ваши файлы изображений в папку images.
@@ -11,12 +16,45 @@ define e = Character('Эйлин', color="#c8ffc8")
 # Игра начинается здесь:
 label start:
 
-    scene bg room
+    scene bg first
 
-    show eileen happy
+    show ritsu normal
 
-    e "Вы создали новую игру Ren'Py."
+    ritsu "ММММММММИИИИИИИИИИИОООООООООООО"
 
-    e "Добавьте сюжет, изображения и музыку и отправьте её в мир!"
+    ritsu "Давай вступим в клуб!!!"
+
+    hide ritsu
+
+    show mio normal
+
+    mio "Вступим в клуб?"
+
+    hide mio
+
+    show ritsu normal
+
+    ritsu "В клуб лёгкой музыки...\nКЕЙ-ОН!!!"
+
+    hide ritsu
+
+    show mio normal
+
+    mio "Но я хотела вступить в научный клуб..."
+
+    mio "И заявление написала"
+
+    hide mio
+
+    show ritsu normal
+
+    "*РВЁТ ЗАЯВЛЕНИЕ*"
+
+    mio "АААААААААААААААААААААААААА!!!"
 
     return
+
+
+label first:
+    show ritsu normal
+
